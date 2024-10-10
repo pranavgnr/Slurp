@@ -1,0 +1,181 @@
+.center-container {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  height: 100vh; /* Full viewport height */
+  text-align: center;
+  flex-direction: column;
+}
+
+.center-container .logo {
+  width: 70vw;
+  max-width: 500px; /* Makes the image responsive */
+  height: auto;
+}
+
+.center-container .pizza {
+  width: 2vw;
+  max-width: 60px;
+  height: auto;
+  position: absolute;
+  top: 10%;   /* Adjust the percentage to move the element vertically */
+  left: 30%;  /* Adjust the percentage to move the element horizontally */
+}
+
+.center-container .fastfood {
+  width: 2vw;
+  height: auto;
+  max-width: 60px;
+  position: absolute;
+  top: 50%;   /* Adjust the percentage to move the element vertically */
+  right: 10%;  /* Adjust the percentage to move the element horizontally */
+}
+
+.motto {
+  font-size: 2vw;
+}
+
+.center-container .almond {
+  width: 10vw;
+  height: auto;
+  max-width: 80px;
+  position: absolute;
+  top: 70%;   /* Adjust the percentage to move the element vertically */
+  left: 25%;  /* Adjust the percentage to move the element horizontally */
+  transform: rotate(15deg);
+}
+
+.center-container .chinese-food {
+  width: 2.5vw;
+  height: auto;
+  max-width: 60px;
+  position: absolute;
+  top: 20%;
+  right: 18%;
+}
+
+.center-container .taco {
+  width: 2.5vw;
+  height: auto;
+  max-width: 60px;
+  position: absolute;
+  top: 55%;
+  left: 25%;
+}
+
+.center-container .soda {
+  width: 3vw;
+  height: auto;
+  max-width: 60px;
+  position: absolute;
+  top: 73%;
+  right: 25%;
+}
+
+.center-container .watermelon {
+  position: absolute;
+  top: 24%;
+  left: 20%;
+}
+
+.center-container .burger {
+  width: 6vw;
+  position: absolute;
+  top: 50%;
+  right: 20%;
+}
+
+.center-container .icecream {
+  width: 6vw;
+  position: absolute;
+  top: 10%;   /* Adjust the percentage to move the element vertically */
+  right: 30%;
+  transform: rotate(-35deg);
+}
+
+.button {
+  margin: 10px;
+  padding: 0.8rem 2rem;
+  font-size: 1vw; /* Responsive font size */
+  font-family: 'Montserrat',sans-serif;
+  background-color: #95E1D3;
+  color: #000000;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .logo {
+    max-width: 60vw;
+  }
+
+  .motto {
+    font-size: 3vw;
+  }
+
+  .button {
+    font-size: 1rem;
+    padding: 0.6rem 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo {
+    max-width: 90vw;
+  }
+
+  .motto {
+    font-size: 3vw;
+  }
+
+  .button {
+    font-size: 0.8rem;
+    padding: 0.5rem 1rem;
+    margin: 5px;
+  }
+
+  .center-container .watermelon {
+    position: absolute;
+    top: 19%;
+    left: 1%;
+  }
+
+  .center-container .burger {
+    width: 15vw;
+    position: absolute;
+    top: 59%;
+    right: 1%;
+  }
+
+  .center-container .almond {
+    width: 15vw;
+    position: absolute;
+    top: 69%;
+    left: 20%;
+  }
+
+  .center-container .pizza {
+    width: 6vw;
+    top: 30%;   /* Adjust the percentage to move the element vertically */
+    left: 50%;  /* Adjust the percentage to move the element horizontally */
+  }
+
+  .center-container .chinese-food {
+    width: 6vw;
+    top: 50%;   /* Adjust the percentage to move the element vertically */
+    left: 5%;  /* Adjust the percentage to move the element horizontally */
+  }
+
+  .center-container .icecream {
+    width: 10vw;
+    top: 40%;   /* Adjust the percentage to move the element vertically */
+    right: 5%;
+    transform: rotate(-35deg);
+  }
+
+  .center-container .taco {
+    width: 6vw;
+  }
+}
