@@ -16,7 +16,7 @@ gsap.registerPlugin(TextPlugin)
 export class HomeComponent {
   ngOnInit(): void {
     gsap.to(' .watermelon, .burger, .almond', {
-      duration: 3,
+      duration: 2,
       motionPath: {
         path: [
           { x: 0, y: 0 },

@@ -33,6 +33,8 @@
 
 .motto {
   font-size: 2vw;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
 }
 
 .center-container .almond {
@@ -46,7 +48,7 @@
 }
 
 .center-container .chinese-food {
-  width: 2.5vw;
+  width: 2vw;
   height: auto;
   max-width: 60px;
   position: absolute;
@@ -55,7 +57,7 @@
 }
 
 .center-container .taco {
-  width: 2.5vw;
+  width: 2vw;
   height: auto;
   max-width: 60px;
   position: absolute;
@@ -64,7 +66,7 @@
 }
 
 .center-container .soda {
-  width: 3vw;
+  width: 2vw;
   height: auto;
   max-width: 60px;
   position: absolute;
@@ -157,13 +159,13 @@
   }
 
   .center-container .pizza {
-    width: 6vw;
+    width: 4vw;
     top: 30%;   /* Adjust the percentage to move the element vertically */
     left: 50%;  /* Adjust the percentage to move the element horizontally */
   }
 
   .center-container .chinese-food {
-    width: 6vw;
+    width: 4vw;
     top: 50%;   /* Adjust the percentage to move the element vertically */
     left: 5%;  /* Adjust the percentage to move the element horizontally */
   }
@@ -176,6 +178,8 @@
   }
 
   .center-container .taco {
-    width: 6vw;
+    width: 4vw;
+    left: 15%;
+    top: 60%;
   }
 }
