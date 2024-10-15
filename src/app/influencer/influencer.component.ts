@@ -17,7 +17,7 @@ export class InfluencerComponent {
       once: true,    // Whether animation should happen only once
     });
 
-  gsap.to('.wave, .melon, .mint', {
+  gsap.to('.wave, .mint, .asterisk-1, .asterisk', {
     duration: 1,
     motionPath: {
       path: [

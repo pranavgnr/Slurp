@@ -86,7 +86,7 @@
 
 .melon {
   position: absolute;
-  top: 70%;
+  top: 75%;
   left: 2%;
 }
 
@@ -108,6 +108,13 @@
   top: 75%;
   right: 2%;
   transform: rotate(5deg);
+}
+
+.asterisk-1 {
+  position: absolute;
+  top: 55%;
+  left: 1%;
+  transform: rotate(15deg);
 }
 
 .card-title {
@@ -309,7 +316,7 @@
   align-items: center;
 }
 
-scrolltrigger-container-right {
+.scrolltrigger-container-right {
   display: flex;
   flex-direction: row;
   align-items: center;
