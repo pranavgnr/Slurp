@@ -17,8 +17,8 @@ export class InfluencerComponent {
       once: true,    // Whether animation should happen only once
     });
 
-  gsap.to(' .melon, .arrows', {
-    duration: 2,
+  gsap.to('.wave, .arrows', {
+    duration: 1,
     motionPath: {
       path: [
         { x: 0, y: 0 },
@@ -38,7 +38,7 @@ export class InfluencerComponent {
       end: 'bottom center-100', // End when the bottom of the container hits the center of the viewport
       scrub: true, // Smoothly links the animation to the scroll position
     },
-    height: '100%', // The final height of the line
+    height: '95%', // The final height of the line
     duration: 0.2,
     ease: 'none' // Keep the speed constant
   });

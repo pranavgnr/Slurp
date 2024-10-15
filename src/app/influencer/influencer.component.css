@@ -65,6 +65,12 @@
   color: #00ADB5;
 }
 
+.img-container {
+  margin: 10px;
+  display: flex;
+  flex-direction: row;
+}
+
 .melon {
   position: relative;
   top: 1%;
@@ -78,6 +84,7 @@
 }
 
 .card-title {
+  margin: 10px;
   color: #00ADB5;
   font-weight: bold;
 }
@@ -85,7 +92,11 @@
 .arrows {
   position: absolute;
   left: 48%;
-  top: 90%;
+  top: 80%;
+}
+
+.card-image {
+  margin: 20px;
 }
 
 .second-container {
@@ -102,11 +113,21 @@
 
 .scroll-line {
   margin-left: 10%;
-  border-left: 8px dotted #f79275;
+  border-left: 5px solid #E2ADA1;
   position: absolute;
   left: 45%;
   width: 50px;
   height: 0;
+  z-index: 1000;
+}
+
+.scroll-line2 {
+  margin-left: 10%;
+  border-left: 5px solid white;
+  position: absolute;
+  left: 45%;
+  width: 50px;
+  height: 70%;
 }
 
 .year-marker {
@@ -124,7 +145,7 @@
 
 .parent {
   display: grid;
-  grid-template-columns: 25% 10% 25%;
+  grid-template-columns: 35% 10% 35%;
   grid-template-rows: repeat(5, 15%);
   gap: 0px;
   height: 180vh;
@@ -198,7 +219,7 @@
 }
 
 .grandparent-container {
-  margin-left: 25%;
+  margin-left: 15%;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -210,7 +231,7 @@
 }
 
 .card-title-scroll {
-  color: #6096B4;
+  color: black;
   font-size: 2.5vw;
 }
 
@@ -228,23 +249,17 @@
   padding: 0px;
 }
 
-/* .imgcontainer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-} */
-
 .heading-major {
   font-family: 'Titillium Web', sans-serif;
   font-weight: 900;
   font-size: 10vw;
-  color: #222831;
+  color: black;
 }
 
 .major-paragraph {
   font-family: 'Titillium Web', sans-serif;
   font-weight: 200 !important;
-  color: #00ADB5;
+  color: black;
 }
 
 .apply-container {
@@ -261,8 +276,20 @@
 }
 
 .outermost-container {
+  background-color: #A1D6E2;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+scrolltrigger-container-right {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-title-scroll {
+  font-weight: bold;
 }
