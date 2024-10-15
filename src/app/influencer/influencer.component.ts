@@ -13,16 +13,30 @@ gsap.registerPlugin(MotionPathPlugin);
 export class InfluencerComponent {
   ngOnInit(): void {
     AOS.init({
-      duration: 800, // Animation duration in milliseconds
+      duration: 1000, // Animation duration in milliseconds
       once: true,    // Whether animation should happen only once
     });
 
-  gsap.to('.wave, .arrows', {
+  gsap.to('.wave, .melon, .mint', {
     duration: 1,
     motionPath: {
       path: [
         { x: 0, y: 0 },
         { x: 0, y: 20 }
+      ],
+      autoRotate: false,
+    },
+    ease: "power1.inOut",
+    repeat: -1, // Infinite loop
+    yoyo: true  // Go back and forth
+  });
+
+  gsap.to('.reverse-wave', {
+    duration: 1,
+    motionPath: {
+      path: [
+        { x: 0, y: 0 },
+        { x: 0, y: -20 }
       ],
       autoRotate: false,
     },
@@ -43,5 +57,19 @@ export class InfluencerComponent {
     ease: 'none' // Keep the speed constant
   });
 
-}
+  gsap.to('.heading-join', {
+    duration: 1.5,
+    text: "JOIN THE WAITLIST TODAY!",
+    ease: "none",
+    scrollTrigger: {
+      trigger: '.heading-join', // Element to trigger animation
+      start: 'top 75%',         // Trigger when .heading-join is 75% from the top of the viewport
+      toggleActions: 'play none none none', // Play animation on scroll
+    }
+  });
+  }
+
+  redirect() {
+    window.location.href ='https://forms.gle/NzbJKjEqNXQQcumZ8'
+  }
 }

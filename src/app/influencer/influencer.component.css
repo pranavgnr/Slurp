@@ -35,11 +35,25 @@
   width: auto; /* Auto adjust width based on height */
 }
 
-/* Media query for responsiveness */
-@media (max-width: 992px) {
-  .custom-navbar {
-      width: 95%; /* Make the navbar more compact on smaller screens */
-  }
+.nav-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-head {
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: 900;
+  font-size: 6vw;
+  color: #222831;
+  justify-content: center;
+}
+
+.second-navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .main-container {
@@ -47,7 +61,7 @@
   align-items: center;
   justify-content: center;
   grid-template-columns: repeat(2, 0.4fr);
-  grid-template-rows: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 2fr);
 }
 
 .card {
@@ -66,15 +80,14 @@
 }
 
 .img-container {
-  margin: 10px;
   display: flex;
   flex-direction: row;
 }
 
 .melon {
-  position: relative;
-  top: 1%;
-  left: 3%;
+  position: absolute;
+  top: 70%;
+  left: 2%;
 }
 
 .mint {
@@ -83,8 +96,21 @@
   right: 5%;
 }
 
+.camera {
+  position: absolute;
+  top: 25%;
+  left: 3%;
+  transform: rotate(17deg);
+}
+
+.asterisk {
+  position: absolute;
+  top: 75%;
+  right: 2%;
+  transform: rotate(5deg);
+}
+
 .card-title {
-  margin: 10px;
   color: #00ADB5;
   font-weight: bold;
 }
@@ -96,7 +122,7 @@
 }
 
 .card-image {
-  margin: 20px;
+  margin: 10px;
 }
 
 .second-container {
@@ -146,7 +172,7 @@
 .parent {
   display: grid;
   grid-template-columns: 35% 10% 35%;
-  grid-template-rows: repeat(5, 15%);
+  grid-template-rows: repeat(5, 20%);
   gap: 0px;
   height: 180vh;
 }
@@ -269,7 +295,7 @@
   justify-content: center;
 }
 
-.heading {
+.heading-join {
   font-family: 'Titillium Web', sans-serif;
   font-weight: 900;
   font-size: 8vw;
@@ -292,4 +318,38 @@ scrolltrigger-container-right {
 
 .card-title-scroll {
   font-weight: bold;
+}
+
+.custom-button {
+  z-index: 1000;
+}
+
+/* Extra Small Devices (Phones, Portrait) */
+@media (max-width: 575px) {
+  /* CSS for small mobile devices */
+}
+
+/* Small Devices (Phones, Landscape) */
+@media (min-width: 576px) and (max-width: 767px) {
+  /* CSS for larger mobile devices */
+}
+
+/* Medium Devices (Tablets) */
+@media (min-width: 768px) and (max-width: 991px) {
+  /* CSS for tablets */
+}
+
+/* Large Devices (Laptops) */
+@media (min-width: 992px) and (max-width: 1199px) {
+  /* CSS for laptops and smaller desktops */
+}
+
+/* Extra Large Devices (Desktops) */
+@media (min-width: 1200px) {
+  /* CSS for large desktops */
+}
+
+/* Ultra-Wide Devices (Large Monitors) */
+@media (min-width: 1600px) {
+  /* CSS for ultra-wide screens */
 }
