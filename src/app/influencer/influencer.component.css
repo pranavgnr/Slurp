@@ -291,7 +291,7 @@
 
 .major-paragraph {
   font-family: 'Titillium Web', sans-serif;
-  font-weight: 200 !important;
+  font-weight: 200;
   color: black;
 }
 
@@ -334,6 +334,96 @@
 /* Extra Small Devices (Phones, Portrait) */
 @media (max-width: 575px) {
   /* CSS for small mobile devices */
+  .main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .main-head {
+    font-size: 7vw;
+    z-index: 1000;
+  }
+
+  .card-body {
+    font-size: 3vw;
+  }
+
+  .card-title {
+    margin-top: 3vw;
+  }
+
+  .melon {
+    position: relative;
+    top: 2%;
+    left: -10%;
+    width: 25px;
+    height: auto;
+  }
+
+  .mint {
+    right: -1%;
+  }
+
+  .camera {
+    top: 10%;
+    z-index: -1000;
+    left: -5%;
+  }
+
+  .asterisk {
+    position: absolute;
+    top: 90%;
+    right: 5%;
+  }
+
+  .heading-major {
+    margin: 20px;
+    z-index: 1000;
+  }
+
+  .major-paragraph {
+    font-size: 3vw;
+    font-family: 'Montserrat';
+    font-weight: 100;
+  }
+
+  .second-container {
+    margin: 3vw;
+  }
+
+  .parent {
+    display: grid;
+    grid-template-columns: 40% 10% 40%;
+    grid-template-rows: repeat(5, 15%);
+    gap: 0px;
+    height: 160vh;
+  }
+
+  .grandparent-container {
+    margin-left: 6%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .scroll {
+    width: 70px !important;
+  }
+
+  .card-title-scroll {
+    font-size: 5vw;
+  }
+
+  .card-text {
+    font-size: 3vw;
+  }
+
+  .scroll-line2 {
+    height: 60%;
+  }
+
 }
 
 /* Small Devices (Phones, Landscape) */

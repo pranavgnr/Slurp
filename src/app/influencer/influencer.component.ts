@@ -52,8 +52,8 @@ export class InfluencerComponent {
       end: 'bottom center-100', // End when the bottom of the container hits the center of the viewport
       scrub: true, // Smoothly links the animation to the scroll position
     },
-    height: '95%', // The final height of the line
-    duration: 0.2,
+    height: '90%', // The final height of the line
+    duration: 2,
     ease: 'none' // Keep the speed constant
   });
 
