@@ -44,7 +44,7 @@
 
 .main-head {
   font-family: 'Titillium Web', sans-serif;
-  font-weight: 900;
+  font-weight: 700;
   font-size: 6vw;
   color: #222831;
   justify-content: center;
@@ -280,18 +280,22 @@
 
 .card-body {
   padding: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .heading-major {
   font-family: 'Titillium Web', sans-serif;
-  font-weight: 900;
-  font-size: 10vw;
+  font-weight: 700;
+  font-size: 8vw;
   color: black;
 }
 
 .major-paragraph {
   font-family: 'Titillium Web', sans-serif;
-  font-weight: 200;
+  font-weight: 300;
   color: black;
 }
 

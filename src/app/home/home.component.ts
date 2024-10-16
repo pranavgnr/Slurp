@@ -35,4 +35,8 @@ export class HomeComponent {
       ease: "none",
     });
   }
+
+  brands() {
+    window.location.href = "https://www.canva.com/design/DAGTp5oCwVE/bZ0xpc7MoFiGOcaHxOpZgw/view?utm_content=DAGTp5oCwVE&utm_campaign=designshare&utm_medium=link&utm_source=editor";
+  }
 }
