@@ -160,7 +160,7 @@
   position: absolute;
   left: 45%;
   width: 50px;
-  height: 70%;
+  height: 65%;
 }
 
 .year-marker {
@@ -331,6 +331,13 @@
   z-index: 1000;
 }
 
+.headings-para-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 /* Extra Small Devices (Phones, Portrait) */
 @media (max-width: 575px) {
   /* CSS for small mobile devices */
@@ -339,6 +346,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin: 3vw;
   }
 
   .main-head {
@@ -421,7 +429,7 @@
   }
 
   .scroll-line2 {
-    height: 60%;
+    height: 50%;
   }
 
 }
